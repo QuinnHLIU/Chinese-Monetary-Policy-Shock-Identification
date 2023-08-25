@@ -10,7 +10,10 @@ Scrape the exact timing (minute level) of monetary events from the [official web
 
 We in particular emphasize the distinction between conventional monetary tools and "innovative" ones like MLF and SLF in China. The final sample includes 181 days, among which 116 are innovative days, and 67 are conventional days, with 2 days overlap. Label them as the "PBOC days".
 
-Code: See Python script in **ScrapeMPTiming.py**. % raw data not available right now
+Code: See Python script in **ScrapeMPTiming.py**. 
+
+> raw data not available right now
+> run ``pip install -r requirements.txt`` before running
 
 
 ### 1.2 Underlying Assumption and High Frequency Financial Prices
