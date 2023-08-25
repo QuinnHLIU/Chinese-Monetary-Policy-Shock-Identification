@@ -54,7 +54,7 @@ Code: **YieldCurve.do** and **Rigobon.m**.
 
 ## Section 3. Micro-Level Analysis -- Bond Spread Responses
 
-We use the most extensive dataset of bond transaction in Chinese capital market, ranging from 2006-2022. (the period is restricted by availability of IRS data). We include various ratings and bond types including enterprise bonds, corporate bonds, financial bonds, MTN, SCP and government bonds.
+We use the most extensive dataset of bond transaction in Chinese capital market, ranging from 2006-2022. (the period is restricted by availability of IRS data). We include various ratings and bond types including enterprise bonds, corporate bonds, financial bonds, MTN, SCP and government bonds. Apply the same sample selection as in Fang, Wang and Wu (2022).
 
 We firstly regress daily changes in bond yields on the economy-level $MPS$ and document a significantly positive responses. As a normalization, we construct bond spreads as the differences between bond yields and the yield of a representative bond with matched maturity. We define a representative bond as the median of AAA bonds. All regressions are run on PBOC days only. (otherwise the sample would be too large to be possibly estimated!)
 
