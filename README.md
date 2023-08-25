@@ -6,7 +6,7 @@
 
 ### 1.1 Monetary Events
 
-Scrape the exact timing (minute level) of monetary events from the (http://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125475/index.html)[official website] of People's Bank of China (PBOC). 
+Scrape the exact timing (minute level) of monetary events from the [official website](http://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125475/index.html) of People's Bank of China (PBOC). 
 
 We in particular emphasize the distinction between conventional monetary tools and ``innovative" ones like MLF and SLF in China. The final sample includes 181 days, among which 116 are innovative days, and 67 are conventional days, with 2 days overlap. Label them as the ``PBOC days".
 
@@ -53,7 +53,7 @@ Code: **YieldCurve.do** and **Rigobon.m**.
 
 We use the most extensive dataset of bond transaction in Chinese capital market, ranging from 2006-2022. (the period is restricted by availability of IRS data). We include various ratings and bond types including enterprise bonds, corporate bonds, financial bonds, MTN, SCP and government bonds.
 
-We firstly regress daily changes in bond yields on the economy-level $MPS$ and document a significantly positive responses. As a normalization, we construct bond spreads as the differences between bond yields and the yield of a representative bond with matched maturity. We define a representative bond as the median of AAA bonds. All regressions are run on PBOC days only. (otherwise the sample would be too large to be possibly estimated QAQ)
+We firstly regress daily changes in bond yields on the economy-level $MPS$ and document a significantly positive responses. As a normalization, we construct bond spreads as the differences between bond yields and the yield of a representative bond with matched maturity. We define a representative bond as the median of AAA bonds. All regressions are run on PBOC days only. (otherwise the sample would be too large to be possibly estimated!)
 
 For robustness, two econometric specifications are used. (1) OLS; (2) 2SLS with the regressor = daily changes in R007, IV = the contructed MPS shock (could be high-frequency or daily version). The response is highly significant and positive with reasonable magnitudes across various subsamples and different specifications.
 
@@ -74,7 +74,7 @@ Details on the LP specification:
 > lag-augmented structure: one period lag of all endogenous variables as suggested by AIC/BIC (Montiel Olea and Plagborg‐Møller, 2021)
 > fixed-effect model is not used. Instead, apply half-panel jackknife method to adjust for the implicit Nickell bias (Mei, Sheng and Shi, 2023)
 
-Code: **LPFirm.R**. The `pLP.R' project is imported from [https://github.com/zhentaoshi/panel-local-projection.git](Github).
+Code: **LPFirm.R**. The `pLP.R' project is imported from [Github](https://github.com/zhentaoshi/panel-local-projection.git).
 
 
 ### 4.2 Borrowing Constraint Heterogeneity
@@ -83,7 +83,7 @@ We then interact the MPS with a proxy for firm financial constraint to evaluate 
 
 The proxy include: (i) Rajan-Zingales (1998)'s EFD measure (ii) SA index of Hadlock and Pierce (2010) (iii) net worth and dividend dummy in Cloyne et al.(2023) (iv) leverage ratio as in Bahaj et al. (2022)
 
-> a separate project looks at the role of excess bond premium: [https://github.com/QuinnHLIU/China-Excess-Bond-Premium](Chinese EBP).
+> a separate project looks at the role of excess bond premium: [Chinese EBP](https://github.com/QuinnHLIU/China-Excess-Bond-Premium).
 
 Subsample exercise by SA / SOE-POE groupings is also conducted.
 
