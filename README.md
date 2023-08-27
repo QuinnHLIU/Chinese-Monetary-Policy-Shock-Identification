@@ -48,7 +48,7 @@ To see the first-order impact of the constructed monetary policy shocks on macro
 
 The Rigobon method serves are an additional test on background noise. We unsurprisingly document that shocks of the high frequency window include much less noise than a daily window, as in Nakamura and Steisson (2018).
 
-Code: **YieldCurve.do** and **Rigobon.m**.
+Code: **YieldCurve.do**, **Rigobon.do** and **Rigobon.m**.
 
 
 
